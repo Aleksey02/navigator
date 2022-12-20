@@ -1,0 +1,128 @@
+@import 'primeflex/primeflex.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.container {
+  padding: 0 40px;
+}
+.window{
+display: flex;
+justify-content: space-between;
+
+&__main{
+  width: 100%;
+}
+}
+.col-2,
+.col-10{
+  padding: 0;
+}
+.grid{
+  margin: 0;
+}
+.aside{
+  /* max-width: 230px;
+  width: 100%; */
+  min-height: 100vh;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // bottom: 0;
+  background: #FFFFFF;
+  border-right: 1px solid rgba(26, 115, 232, 0.3);
+  &__box{
+    padding: 17px 14px 0 20px;
+    &__menu{
+      padding: 16px 18px 16px 11px;
+      margin-bottom: 27px;
+    }
+    &__items{
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
+    }
+    &__item{
+      display: flex;
+      align-items: center;
+      padding: 12px 14px;
+      gap: 10px;
+      & img{
+        width: 20px;
+        height: 20px;
+      }
+      &:hover{
+        background: #E0E0E0;
+        border-radius: 10px;
+      }
+      &-text{   
+        white-space: nowrap;    
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+      }
+    }
+  }
+}
+.header{
+  background: #FFFFFF;
+  border-bottom: 1px solid rgba(26, 115, 232, 0.3);
+  padding: 8px 0;
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__right{
+      &-list{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+      &-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-profile{
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            & span{
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 17px;
+              color: #939597;
+            }
+          }
+        }
+    }
+  }
+}
+
+.menuClose{
+  justify-content: center;
+}
+.choiceItem{
+  background: #007CFF;
+  border-radius: 10px;
+  &__text{
+    color: #FFFFFF;
+  }
+  &__img{
+    filter: invert(1);
+  }
+}
